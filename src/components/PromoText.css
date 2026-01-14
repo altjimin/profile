@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@900&display=swap');
+
+.promo-text-container {
+  width: 100%;
+  overflow: hidden;
+  background: #000000;
+  padding: 1.2rem 0;
+  position: relative;
+  border-top: 3px solid #00ff00;
+  border-bottom: 3px solid #00ff00;
+}
+
+.promo-text-wrapper {
+  display: flex;
+  width: max-content;
+  animation: scrollPromoText 15s linear infinite;
+}
+
+.promo-text-content {
+  display: inline-block;
+  white-space: nowrap;
+  font-family: 'Space Grotesk', 'Arial Black', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #00ff00;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 1;
+  text-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+}
+
+@keyframes scrollPromoText {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .promo-text-content {
+    font-size: 1.3rem;
+  }
+  
+  .promo-text-container {
+    padding: 0.8rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo-text-content {
+    font-size: 1rem;
+  }
+}
+

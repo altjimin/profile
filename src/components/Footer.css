@@ -1,0 +1,23 @@
+.footer {
+  background: #000000;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.footer-text:last-child {
+  font-weight: 600;
+}
+

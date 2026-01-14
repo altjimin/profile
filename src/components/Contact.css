@@ -1,0 +1,115 @@
+.contact {
+  padding: 6rem 2rem;
+  background: #0a0a0a;
+  position: relative;
+}
+
+.section-title-contact {
+  font-size: 6rem;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: 'Space Grotesk', sans-serif;
+  margin-bottom: 3rem;
+  text-align: left;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-card {
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(240, 240, 240, 0.98);
+  padding: 3rem 2.5rem;
+  border-radius: 0;
+  position: relative;
+}
+
+.contact-card-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: 'Space Grotesk', sans-serif;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contact-divider {
+  width: 100%;
+  height: 1px;
+  background: repeating-linear-gradient(
+    to right,
+    #000 0px,
+    #000 10px,
+    transparent 10px,
+    transparent 15px
+  );
+  margin: 1.5rem 0;
+}
+
+.contact-method {
+  margin: 1.5rem 0;
+}
+
+.contact-platform {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #000;
+  font-family: 'Courier New', monospace;
+  margin-bottom: 0.5rem;
+}
+
+.contact-handle {
+  font-weight: 400;
+}
+
+.contact-description {
+  font-size: 0.95rem;
+  color: #333;
+  font-style: italic;
+  margin-top: 0.3rem;
+}
+
+.contact-details {
+  list-style: none;
+  padding: 0;
+  margin: 0.8rem 0 0 0;
+}
+
+.contact-details li {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 0.3rem 0;
+}
+
+.contact-barcode {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .section-title-contact {
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .contact-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .contact-card-title {
+    font-size: 1.5rem;
+  }
+  
+  .contact-platform {
+    font-size: 1.1rem;
+  }
+}
+

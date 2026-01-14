@@ -1,0 +1,37 @@
+.simple-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.1s ease, transform 0.1s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  will-change: transform;
+}
+
+.simple-cursor.pressed {
+  background-color: #888;
+  border-color: rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%) scale(0.85);
+  box-shadow: 0 0 5px rgba(136, 136, 136, 0.5);
+}
+
+/* Hide default cursor */
+* {
+  cursor: none !important;
+}
+
+@media (max-width: 768px) {
+  .simple-cursor {
+    display: none;
+  }
+  
+  * {
+    cursor: auto !important;
+  }
+}
+
